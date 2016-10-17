@@ -1,0 +1,31 @@
+{
+	"author": "Sponco",
+	"name": "osrs-bot",
+	"version": "1.3.1",
+	"license": "MIT",
+	"keywords": [],
+
+	"main": "app.js",
+	"scripts": {
+		"start": "npm run-script start-loop",
+		"start-loop": "while :; do node app.js ; done",
+		"update": "phantomjs names-updater.phantomjs > names.json",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+
+
+	"homepage": "https://github.com/Sponco/Dank-Plebians",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Sponco/Dank-Plebians.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Sponco/Dank-Plebians/issues"
+	},
+
+	"dependencies": {
+		"request" : "latest",
+		"discord.io" : "latest",
+		"fuse.js" : "latest"
+	}
+}
